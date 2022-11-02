@@ -15,11 +15,10 @@ body{
     flex-direction: column;
     background-color: #594545;
     padding: 10px;
-    
 
 }
 .screen{
-    padding: 10px 20px;
+    padding: 10px 35px;
     border: 2px var(--darker) solid;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -37,7 +36,8 @@ body{
     height: 50vh;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
-
+    gap: 1px;
+    padding: 10px;
     grid-template-areas:
     "clear clear undo  divi"
     "seven eight nine mult"
@@ -55,9 +55,17 @@ body{
     --colorNumbers:var(--dark);
     --colorOperators:var(--lighter);
   }
-
+  /*
+  #disOper,#disAnsw{
+  }
+  */
+  #clear,#undo{
+    background-color: yellow;
+    border-radius: 4px;
+  }
   #plus,#sub,#enter,#divi,#mult{
     background-color: var(--lighter);
+    border-radius: 4px;
   }
 
   #one,#two,#three,
@@ -65,9 +73,8 @@ body{
   #seven,#eight,#nine,
   #zero,#dot{
     background-color: var(--dark);
+    border-radius: 4px;
   }
-
-
 
   #disOper{
     grid-area:disOper;
@@ -142,3 +149,8 @@ body{
   #plus{
     grid-area:plus;
   }
+
+  .btn {
+
+  }
+
