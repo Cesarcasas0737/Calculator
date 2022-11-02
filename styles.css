@@ -1,0 +1,144 @@
+body{
+    font-family: Besley, serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #FFF8EA;
+}
+.content{
+    display: flex;
+}
+.calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #594545;
+    padding: 10px;
+    
+
+}
+.screen{
+    padding: 10px 20px;
+    border: 2px var(--darker) solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: var(--light);
+    color: var(--lighter);
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.buttonGrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:grid;
+    height: 50vh;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+
+    grid-template-areas:
+    "clear clear undo  divi"
+    "seven eight nine mult"
+    "four five six sub"
+    "one two three plus"
+    "zero zero dot enter";
+    background-color: var(--light);
+  }
+
+  :root {
+    --darker: #594545;
+    --dark: #815B5B;
+    --light: #9E7676;
+    --lighter: #FFF8EA;
+    --colorNumbers:var(--dark);
+    --colorOperators:var(--lighter);
+  }
+
+  #plus,#sub,#enter,#divi,#mult{
+    background-color: var(--lighter);
+  }
+
+  #one,#two,#three,
+  #four,#five,#six,
+  #seven,#eight,#nine,
+  #zero,#dot{
+    background-color: var(--dark);
+  }
+
+
+
+  #disOper{
+    grid-area:disOper;
+  }
+  #disAnsw{
+    grid-area:disAnsw;
+  }
+
+  #zero{
+    grid-area:zero;
+
+  }
+  #one{
+    grid-area:one;
+    
+  }
+  #two{
+    grid-area:two;
+
+  }
+  #three{
+    grid-area:three;
+
+  }
+  #four{
+    grid-area:four;
+    
+  }
+  #five{
+    grid-area:five;
+
+  }
+  #six{
+    grid-area:six;
+
+  }
+  #seven{
+    grid-area:seven;
+
+  }
+  #eight{
+    grid-area:eight;
+
+  }
+  #nine{
+    grid-area:nine;
+
+  }
+  #dot{
+    grid-area:dot;
+  }
+
+  #enter{
+    grid-area:enter;
+  }
+
+  #clear{
+    grid-area:clear;
+  }
+  #undo{
+    grid-area:undo;
+  }
+  #divi{
+    grid-area:divi;
+  }
+  #mult{
+    grid-area:mult;
+  }
+  #sub{
+    grid-area:sub;
+  }
+  #plus{
+    grid-area:plus;
+  }
