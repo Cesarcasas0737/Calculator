@@ -33,7 +33,7 @@ body{
     justify-content: center;
     align-items: center;
     display:grid;
-    height: 50vh;
+    height: 40vh;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
     gap: 1px;
