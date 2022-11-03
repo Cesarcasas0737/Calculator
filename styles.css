@@ -3,7 +3,7 @@ body{
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: #FFF8EA;
+    background-color: var(--lighter);
 }
 .content{
     display: flex;
@@ -13,12 +13,12 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #594545;
+    background-color: var(--darker);
     padding: 10px;
 
 }
 .screen{
-    padding: 10px 55px;
+    padding: 10px 45px;
     border: 2px var(--darker) solid;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -37,7 +37,7 @@ body{
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
     gap: 1px;
-    padding: 10px;
+    padding: 20px;
     grid-template-areas:
     "clear clear undo  divi"
     "seven eight nine mult"
@@ -48,9 +48,9 @@ body{
   }
 
   :root {
-    --darker: #594545;
-    --dark: #815B5B;
-    --light: #9E7676;
+    --darker: #555555;
+    --dark: #464343;
+    --light: #817c77;
     --lighter: #FFF8EA;
     --colorNumbers:var(--dark);
     --colorOperators:var(--lighter);
@@ -60,7 +60,7 @@ body{
   }
   */
   #clear,#undo{
-    background-color: #faa0a0;
+    background-color: var(--lighter);
     border-radius: 4px;
   }
   #plus,#sub,#enter,#divi,#mult{
