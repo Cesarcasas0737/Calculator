@@ -18,10 +18,10 @@ body{
 
 }
 .screen{
-    padding: 10px 35px;
+    padding: 10px 55px;
     border: 2px var(--darker) solid;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-color: var(--light);
     color: var(--lighter);
     text-align: right;
@@ -60,7 +60,7 @@ body{
   }
   */
   #clear,#undo{
-    background-color: yellow;
+    background-color: #faa0a0;
     border-radius: 4px;
   }
   #plus,#sub,#enter,#divi,#mult{
@@ -150,7 +150,18 @@ body{
     grid-area:plus;
   }
 
-  .btn {
-
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
 
+  button{
+    all: unset
+  }
+  *{
+    border-radius: 9px;
+  }
