@@ -17,3 +17,15 @@ function divide(x,y){
 function operate(){
     return func(x,y);
 }
+
+function calculate(firstNumber, operator, secondNumber) {
+
+	firstNumber = Number(firstNumber);
+	secondNumber = Number(secondNumber);
+
+    if (operator === 'plus' || operator === '+') return firstNumber + secondNumber;
+    if (operator === 'minus' || operator === '-') return firstNumber - secondNumber;
+    if (operator === 'multiply' || operator === 'x') return firstNumber * secondNumber;
+    if (operator === 'divide' || operator === '/') return firstNumber / secondNumber;
+    if (operator === 'remainder' || operator === '%') return firstNumber % secondNumber;
+}
