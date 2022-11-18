@@ -1,0 +1,72 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+button{
+  all: unset;
+  padding-bottom: 10px;
+}
+
+.btn{
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  font-size: 30px;
+  border-radius: 10%;
+  text-align: center;
+}
+.first-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#screen{
+  width: 215px;
+  height: 62px;
+  border: 1px solid salmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: 10px;
+}
+
+.number{
+  border: 1px solid red;
+}
+.number:hover{
+  background-color: thistle;
+}
+.operator{
+  border: 1px solid green;
+}
+
+.clear{
+  border: 1px solid red;
+}
+
+.equal{
+  border: 1px solid orange;
+}
+
+
+.decimal{
+  border: 1px solid pink;
+}
+
+
+.previous{
+  font-size: 20px
+}
+.current{
+  font-size: 30px;
+}
+
+
+
