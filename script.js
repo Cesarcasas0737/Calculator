@@ -1,61 +1,28 @@
-let currentNum = "";
-let previousNum = "";
-let operator = "";
+let operator ='';
+let previousValue ='';
+let currentValue = '';
 
-const currentDisplayNumber = document.querySelector(".currentNumber");
-const previousDisplayNumber = document.querySelector(".previousNumber");
+document.addEventListener("DOMContentLoaded",function(){
+    let clear = document.querySelector("#clear-btn");
+    let equal = document.querySelector(".equal");
+    let decimal = document.querySelector(".decimal");
 
-const equal = document.querySelector(".equal");
+    let numbers = document.querySelectorAll(".number");
+    let operators = document.querySelector(".operator");
 
-const decimal = document.querySelector(".decimal");
-
-const clear = document.querySelector(".clear");
-
-const numberButtons = document.querySelectorAll(".number");
-
-const operators = document.querySelectorAll(".operator");
-
-numberButtons.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      handleNumber(e.target.textContent);
-    });
-  });
+    let previousScreen = document.querySelector(".previous");
+    let currentScreen = document.querySelector(".current");
 
 
-function handleNumber(number) {
-    console.log(number);
+    numbers.forEach((number) => number.addEventListener("click", function(e){
+        
+        handleNumber(e.target.textContent)
+        currentScreen.textContent = currentValue;
+    }))
+});
+
+function handleNumber(num){
+    if(currentValue.length <=5){
+        currentValue += num;
+    }
 }
-
-
-function add(x,y){
-    return(x + y);
-}
-
-function subtract(x,y){
-    return(x - y);
-}
-
-function multiply(x,y){
-    return(x * y);
-}
-
-function divide(x,y){
-    return(x / y);
-}
-
-function operate(){
-    return func(x,y);
-}
-
-function calculate(firstNumber, operator, secondNumber) {
-
-	firstNumber = Number(firstNumber);
-	secondNumber = Number(secondNumber);
-
-    if (operator === 'plus' || operator === '+') return firstNumber + secondNumber;
-    if (operator === 'minus' || operator === '-') return firstNumber - secondNumber;
-    if (operator === 'multiply' || operator === 'x') return firstNumber * secondNumber;
-    if (operator === 'divide' || operator === '/') return firstNumber / secondNumber;
-    if (operator === 'remainder' || operator === '%') return firstNumber % secondNumber;
-}
-
